@@ -17,47 +17,34 @@ body{
 			display:flex;
 			justify-content: space-between;
 }
-.header ul li{	
+li{	
 				font-size:20px;
 				color:#ffffff;
 				letter-spacing:2px;
 				line-height:11px;
-				margin:20px;
-				
-				
+				margin:1.2rem;								
+}
+li:nth-child(2){
+	font-size:24px;
 }
 .main{
-		margin-top:55px;
+		margin-top:3.5rem;
 }
 .main form{
-			display:flex; 	
-			flex-direction: column;
-  			justify-content: space-between; 
-  			position:relative;
+			display: flex;
+  			flex-direction: column;
+ 			justify-content: space-between;
+ 			position:relative;
 }
-.main form input{						
+.main form input{
+    				border-left-style: solid; 
+    				border-color: #eff0f4;							
 					font-size:20px;
 					line-height:11px;
 					border:none;
-					padding:15px 15px 15px 50px;
-					margin:7px 0px;
+					padding:1rem 1rem 1rem 4.5rem;
+					margin:.5rem 0;
 					outline:none;
-}
-.icon1{
-		background:url(../img/icon1.png) no-repeat;
-		width:27px;
-		height:41px;
-		position:absolute;
-		top:14px;	
-		left:12px;
-}
-.icon2{
-		background:url(../img/icon2.png) no-repeat;
-		width:29px;
-		height:43px;
-		position:absolute;
-		top:80px;	
-		left:11px;
 }
 .main form button{
 					font-size:24px;
@@ -66,8 +53,28 @@ body{
 					color:#ffffff;
 					border:none;
 					background-color:#5fc0cd;
-					padding:22px;
-					margin-top:7px;
+					padding:1.5rem;
+					margin-top:.5rem;
+}
+.icon1{
+		background:url(../img/icon1.png) no-repeat;
+		border-right:solid #eaedee .1rem;
+		position:absolute;
+	    top:1.5rem;
+	    left:1.2rem;
+	    padding-right:1.2rem;
+		width:16px;
+		height:25px;
+}
+.icon2{
+		background:url(../img/icon2.png) no-repeat;
+		border-right:solid #eaedee .1rem;
+		position:absolute;
+	    top:6rem;
+	    left:1.2rem;
+	    padding-right:19px;
+		width:16px;
+		height:25px;		
 }
 .footer{
 			display:flex;
@@ -77,6 +84,6 @@ body{
 			font-size:20px;
 			color:#5fc0cd;
 			letter-spacing:3px;
-			padding-top:10px;
-			padding-right:10px;		
+			padding-top:1rem;
+			padding-right:.6rem;		
 }
