@@ -76,6 +76,9 @@
 	background: url(../img/icon2.png) no-repeat;
 } 
 /*内容部分*/
+.section {
+	background-color: #fff;
+}
 .section p:nth-child(1) {
 	margin: 20px 0px 20px 10px;
 	padding-left: 10px;
@@ -102,6 +105,7 @@
 .content {
 	margin: 0 10px;
 	border-top: 1px solid #e1e5e7;
+	background-color: #fff;
 }
 .introduction {
 	display: flex;	
