@@ -12,6 +12,7 @@
 	<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
+	<!--页头-->
 	<div class="header">
 		<div class="section">
 			<button>找雇主</button>
@@ -27,10 +28,23 @@
 					<li><a href="#">深圳市</a></li>
 				</ul>
 			</li>
-			<li class="col-xs-4"><a href="#">食宿<span class="caret"></span></a></li>
-			<li class="col-xs-4"><a href="#">病人情况<span class="caret"></span></a></li>		
+			<li class="col-xs-4 dropdown dropdown-toogle"><a href="#" data-toggle="dropdown">食宿<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">包食</a></li> 
+					<li><a href="#">包宿</a></li>
+					<li><a href="#">包食宿</a></li>
+				</ul>
+			</li>
+			<li class="col-xs-4 dropdown dropdown-toogle"><a href="#" data-toggle="dropdown">病人情况<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">正常</a></li> 
+					<li><a href="#">瘫痪</a></li>
+					<li><a href="#">脑退化症</a></li>
+				</ul>
+			</li>		
 		</ul>
 	</div>
+	<!--主体部分-->
 	<div class="main">
 		<div class="content">
 			<p><span class="icon2"></span><span>服务日期</span></p>
@@ -73,6 +87,7 @@
 			<p><span class="icon3"></span><span>北京.通州.果园</span></p>
 		</div>
 	</div>
+	<!--页尾-->
 	<div class="footer">		
 		<button class="home"><span class="icon4"></span>首页</button>
 		<button class="publish"><span class="icon5"></span></button>
