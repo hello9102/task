@@ -19,13 +19,25 @@ body {
     padding: 4px 0;
     background-clip: content-box; 
 }
+/*主体部分*/
 .main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+.carousel-indicators {
+	bottom: 0;
+}
+.carousel-indicators li {
+	width: 12px;
+	height: 12px;
+	background: #e7e7e7;
+}
+.carousel-indicators .active {
+	background: #69d1e9;
+}	
 .section,
-.content {
+.carousel {
 	width: 90%;
 	text-align: center;
 	background: #fff;
@@ -43,9 +55,6 @@ body {
 	border: none;
 	outline: none;
 }
-.glyphicon {
-	
-}
 .glyphicon-menu-right {
 	position: absolute;
 	top: 50%;
@@ -54,10 +63,10 @@ body {
 	font-size: 17px;
 	color: #e7e7e7;
 }
-.content {
-	position: relative;
+.carousel-inner {
+	padding-bottom: 20px;
 }
-.content button {
+.item button {
 	width: 85%;
 	padding: 24px 0;
 	background: #69d1e9;
@@ -66,13 +75,13 @@ body {
 	border: none;
 	outline: none;
 }
-.content p:first-child {
+.item p:first-child {
 	padding: 14px 0;
 	font-size: 18.87px;
 	color: #fbb435;
 	border-bottom: 1px solid #fde1ae;
 }
-.content p {
+.item p {
 	padding-top: 15px;
 	margin-bottom: 15px;
 	font-size: 12.26px;
@@ -80,9 +89,18 @@ body {
 }
 .glyphicon-triangle-right {
 	position: absolute;
-	top: 52%;
+	top: 50%;
 	right: 1px;
 	transform: translateY(-50%);
 	font-size: 21px;
+	color: #fbb435;
+}
+.carousel-control {
+	opacity: 1;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control:focus, .carousel-control:hover {
 	color: #fbb435;
 }
