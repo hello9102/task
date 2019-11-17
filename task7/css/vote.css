@@ -8,6 +8,12 @@ body {
 p {
 	margin-bottom: 0;
 }
+p,span,buttom {
+	letter-spacing: 1px;
+}
+a:focus, a:hover {
+	text-decoration: none;
+}
 /*页头*/
 .header {
 	position: fixed;
@@ -167,4 +173,7 @@ audio {
 	font-size: 20px;
 	color: #fff;
 	background: #fbb435;
+}
+.footer button a {
+	color: #fff;
 }

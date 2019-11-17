@@ -5,6 +5,10 @@
 body {
 	background: #f0f0f0;
 }
+buttom,p {
+	letter-spacing: 1px;
+}
+/*页头*/
 .header {
 	padding: 11px 11px;
 	background: #29bde0;
@@ -75,6 +79,12 @@ body {
 	color: #fff;
 	border: none;
 	outline: none;
+}
+.item button a {
+	color: #fff;
+}
+.item button a:focus, a:hover {
+	text-decoration: none;
 }
 .item p:first-child {
 	padding: 14px 0;

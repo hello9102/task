@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+p,h1{
+	margin: 0;
+}
+p,h1,span {
+	letter-spacing: 1px;
+}
+a:focus, a:hover {
+	text-decoration: none;
+}
+/*页头*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 8px 10px;
+	border-bottom: 1px solid #74d4eb;
+	background: #29bde0 no-repeat;
+	z-index: 999;
+}
+.header p {
+	font-size: 17px;
+	color: #fff;
+}
+.header span {
+	display: inline-block;
+	width: 26px;
+	height: 21px;
+	background-image: url(../img/results-icon.png);
+}
+.home {
+	background-position: 0 0;
+}
+.help {
+	background-position: -44px 0;
+}
+/*主要内容*/
+.main {
+	margin-top: 49px;
+	margin-bottom: 90px;
+}
+.section {
+	position: relative;
+	padding: 10px 10%;
+	display: flex;
+	flex-direction: column;
+	background: #29bde0;
+}
+.section>a {
+	width: 26px;
+	height: 21px;
+}
+.section span {
+	display: block;
+	padding-top: 3px;
+	font-size: 13px;
+	color: #fff;
+}
+.icon {
+	width: 175px;
+	height: 102px;
+	margin: 0 auto;
+	background: no-repeat;
+	background-image: url(../img/results-icon.png);
+	background-position: 0 -35px;
+}
+.section h1 {
+	position: absolute;
+	top: 78px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 24px;
+	color: #fff;
+}
+.section p {
+	margin: 10px 0 20px;
+	font-size: 16.5px;
+	font-weight: bold;
+	color: #ffc865;
+}
+/*具体结果*/
+.content {
+	
+}
+.situation {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10% 10px;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+.situation p:first-child {
+	padding-bottom: 10px;
+	font-size: 15px;
+	color: #515151;
+}
+.situation>p {
+	padding-bottom: 3px;
+	font-size: 13px;
+	color: #a6a6a6;
+}
+.situation p span {
+	padding-left: 136px;
+	font-size: 10px;
+	color: #e6e6e6;
+}
+/*页尾*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background: rgba(153,223,240,.7);
+}
+.footer button {
+	width: 136px;
+	height: 43px;
+	margin: 10px 0;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background: #f66f6f;
+}
+.footer .special {
+	background: #fbb435;
+}
