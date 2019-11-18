@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+a:focus, a:hover {
+	text-decoration: none;
+}
 /*头部*/
 .header {
 	position: fixed;	
@@ -44,22 +47,23 @@
 	background-position: 0 0;
 }
 /*列表头*/
-.option {
-	list-style: none;
-}
-.option a {
-	color: #c2c2c2;
-	font-size: 13px;
-}
-a:focus, a:hover {
-	text-decoration: none;
-}
-.option>li {
-	background-color: #fff;
-	text-align: center;
-	padding: 10px 0;
-	border-right: 1px solid #e1e5e7;
+.list-header {
+	display: flex;
+	justify-content: space-around;
 	border-bottom: 1px solid #e2eaec;
+}
+.dropdown {
+	width: 100%;
+	border-right: 1px solid #e1e5e7;
+}
+.dropdown-toggle {
+	width: 100%;
+	padding: 12px 0;
+	font-size: 13px;
+	color: #c2c2c2;
+	border: none;
+	outline: none;
+	background: #fff;
 }
 .caret {
 	position: absolute;
@@ -68,13 +72,13 @@ a:focus, a:hover {
 	transform: translateY(-50%);
 }
 .dropdown-menu {
-	left: 50%;
-	transform: translateX(-50%);
+	width: 100%;
+	min-width: 100px;
 	text-align: center;
 }
 /*列表部分*/
 .main {
-	margin-top: 98px;
+	margin-top: 100px;
 	margin-bottom: 65px;
 	z-index: 10;
 }

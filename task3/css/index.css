@@ -1,77 +1,35 @@
-*{
-	margin:0;
-	padding:0;
+* {
+	padding: 0;
+	margin: 0;
 }
-@media screen and (max-width: 321px) {
-    .main p{
-        font-size:27px
-    }
-	.icon p{
-		font-size:21px
-	}
-}
+body {
+	background: #68cdd5;
 
-@media screen and (min-width: 321px) and (max-width:400px) {
-    .main p{
-        font-size:28px
-    }
-	.icon p{
-		font-size:22px
-	}
 }
-
-@media screen and (min-width: 400px) {
-    .main p {
-        font-size:30px
-    }
-	.icon p{
-		font-size:24px
-	}
+.header img {
+	padding-top: 16px;
+	padding-left: 16px;
 }
-body{
-	background:rgb(104,205,203);
+.logo {
+	margin-top: 40px;
+	text-align: center;
 }
-.header{
-	width:100%
+.main p {
+	padding: 60px 10%;
+	font-size:  15px;
+	color: #fff;
+	line-height: 54px;
 }
-.header img{
-	width:8.5%;
-	height:auto;
-	margin:1.8% 86% 3.5% 5.5%;
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 10%;
 }
-.logo{
-	width:100%;
+.icon {
+	text-align: center;
 }
-.logo img{
-	width:28%;
-	height:auto;
-	margin:0 36%;
-}
-.main{
-	width:100%;
-}
-.main p{
-	color:#ffffff;
-	line-height:54px;
-	padding:10.5% 14%;
-}
-.footer{
-	width:100%;
-	margin-top:53px;
-	margin-bottom:102px;
-	overflow:hidden;
-}
-.icon{
-	width:50%;
-	float:left;
-	text-align:center;
-}
-.icon img{
-	width:26.9%;
-	height:auto;
-}
-.icon p{
-	color:#ffffff;
-	line-height:54px;
-	text-align:center;	
+.icon p {
+	font-size: 12px;
+	color: #fff;
+	line-height: 54px;	
 }
