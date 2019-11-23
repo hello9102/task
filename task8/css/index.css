@@ -1,0 +1,246 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+p,h3,h5 {
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+/*页头*/
+.top {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2px 0;
+}
+.top>p {
+	color: #29b078;
+	font-size: 14px;
+}
+.top>span {
+	display: inline-block;
+	width: 110px;
+	height: 25px;
+	margin: 5px 0;
+	background: url(../img/sprite1.png) no-repeat;
+	background-position: 0 0;
+}
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	background: #29b078;
+	padding-right: 18%;
+}
+.nav>li {
+	font-size: 16px;
+	color: #fff;
+}
+.nav>li>a {
+	padding: 36px 40px;
+	color: #fff;
+	border: 3px solid #29b078;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background: none;
+	border-bottom: 3px solid #fff;
+}
+.banner-inner {
+	position: relative;
+}
+.banner-content {
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 1130px;
+	text-align: right;
+}
+.banner-content>p {
+	font-size: 40px;
+	color: #fff;
+}
+.banner-content>p:last-child {
+	font-size: 60px;
+	margin-top: -30px;
+}
+.banner-content span {
+	font-size: 100px;
+}
+.banner-inner img {
+	width: 100%;
+}
+/*主体部分*/
+.main {
+	padding: 50px 10%;
+	background: #fafafa;
+}
+/*特点*/
+.list {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	padding-right: 39px;
+	margin: 70px 0;
+	border-right: 1px dashed #dedede;
+}
+.point {
+	width: 230px;
+}
+.point>span {
+	display: block;
+	width: 60px;
+	height: 65px;
+	margin: 0 auto;
+	background: url(../img/sprite1.png) no-repeat;	
+}
+.point .icon1 {
+	background-position: 9px -37px;
+}
+.point .icon2 {
+	background-position: -60px -37px;
+}
+.point .icon3 {
+	background-position: -139px -37px;
+}
+.point>h5 {
+	padding: 25px 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 11.22px;
+	text-align: center;
+}
+.point>p {
+	font-size: 16px;
+	color: #999;
+	line-height: 26px;
+}
+.data {
+	position: absolute;
+	top: 50%;
+	right: -225px;
+	transform: translateY(-50%);
+}
+.data>p {
+	margin: 10px 0;
+	font-size: 18px;
+	color: #999;
+}
+.data span:first-child {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../img/sprite1.png) no-repeat;
+}
+.data span:last-child {
+	font-size: 18px;
+	color: #26a26f;
+}
+.data p .icon4 {
+	background-position: -135px -5px;
+}
+/*步骤*/
+.step>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 100px 0 30px; 
+}
+.step-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 40px 0;
+}
+.content-section>h5{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	font-size: 18px;
+	color: #29b078;
+	border: 1px solid #f3f3f3;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	background: #fff;
+}
+.content-section>p {
+	width: 154px;
+	font-size: 14px;
+	color: #999;
+}
+.content-section:last-child>p {
+	width: 112px;
+}
+.step-content span {
+	display: inline-block;
+	width: 30px;
+	height: 26px;
+	background: url(../img/sprite1.png) no-repeat;
+	background-position: -165px -2px;
+}
+/*学员展示*/
+.show>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 70px 0 50px; 
+}
+.show-indicators {
+	bottom: -45px;
+}
+.show-indicators .active {
+	margin: 1px;
+	background: #29b078;
+}
+.show-indicators li {
+	width: 12px;
+	height: 12px;
+	background: #fff;
+}
+.item-info {
+	display: flex;
+	justify-content: space-between;
+}
+.info-content {
+	width: 245px;
+	padding: 10px 25px 5px;
+	background: #fff;
+	border-radius: 5px;
+}
+.info-content>h5 {
+	margin-top: 39px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.info-content>p {
+	font-size: 16px;
+	color: #999;
+	margin: 20px 0;
+}
+.info-content>span {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	background: url(../img/sprite1.png) no-repeat;
+}
+.info-content .icon5 {
+	background-position: 0 -113px; 
+}
+.info-content .icon6 {
+	background-position: -121px -113px; 
+}
+.info-content .icon7 {
+	background-position: 2px -236px; 
+}
+.info-content .icon8 {
+	background-position: -120px -236px; 
+}
