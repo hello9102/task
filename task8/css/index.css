@@ -48,6 +48,7 @@ p,h3,h5 {
 .banner-inner {
 	position: relative;
 }
+/*导航图*/
 .banner-content {
 	position: absolute;
 	top: 56%;
@@ -166,6 +167,7 @@ p,h3,h5 {
 	color: #29b078;
 	border: 1px solid #f3f3f3;
 	border-radius: 50%;
+	box-shadow: 0 3px 3px #f3f3f3;
 	text-align: center;
 	line-height: 50px;
 	background: #fff;
@@ -203,6 +205,8 @@ p,h3,h5 {
 	width: 12px;
 	height: 12px;
 	background: #fff;
+	border: 1px solid #e8e7e8;
+	box-shadow: 0 2px 3px #ecebec;
 }
 .item-info {
 	display: flex;
@@ -211,8 +215,11 @@ p,h3,h5 {
 .info-content {
 	width: 245px;
 	padding: 10px 25px 5px;
+	margin-bottom: 5px;
 	background: #fff;
+	border: 1px solid #eeeded;
 	border-radius: 5px;
+	box-shadow: 0 2px 2px #eeeded;
 }
 .info-content>h5 {
 	margin-top: 39px;
@@ -244,3 +251,148 @@ p,h3,h5 {
 .info-content .icon8 {
 	background-position: -120px -236px; 
 }
+/*合作企业*/
+.company>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	margin: 70px 0 50px; 
+}
+.company-name {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #eeeded;
+	box-shadow: 0 0 3px #f7f7f7;
+	background: #fff;
+}
+.company-name>span {
+	display: inline-block;
+	width: 178px;
+	height: 178px;
+	background: url(../img/sprite2.png) no-repeat;
+}
+.company-name .icon9 {
+	background-position: 0 -7px;
+}
+.company-name .icon10 {
+	background-position: -30px -215px;
+}
+.company-name .icon11 {
+	padding: 0 100px;
+	border: 1px solid #f3f3f3;
+	box-shadow: 0 0 10px 3px #f7f7f7;
+	background-position: -399px -7px;
+}
+.company-name .icon12 {
+	background-position: -225px -3px;
+}
+.company-name .icon13 {
+	background-position: -251px -217px;
+}
+/*友情链接*/
+.section {
+	padding: 20px 10%;
+	text-align: center;
+}
+.section>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 27px;
+}
+.link {
+	display: flex;
+	justify-content: space-around;
+}
+.link>li {
+	color: #999;
+}
+.link>li>a {
+	padding-bottom: 4px;
+	font-size: 14px;
+	color: #999;
+}
+.link>li>a:focus, a:hover {
+	text-decoration: none;
+}
+.link .active {
+	border-bottom: 1px solid #26a26f;
+}
+/*页脚*/
+.footer {
+	background: #26a26f;	
+}
+.footer p {
+	font-size: 16px;
+	color: #fff;
+}
+/*相关信息*/
+.related-info {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 11.5%;
+}
+.website-info>p:last-child {
+	padding-top: 60px;
+	font-size: 14px;
+}
+.its-website {
+	margin-left: -200px;
+}
+.website-case {
+	display: flex;
+}
+.website-case>a {
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 5px;
+	margin-right: 35px;
+	margin-top: 17px;
+}
+.website-case>a:focus, a:hover {
+	text-decoration: none;
+}
+.website-case .special {
+	border-bottom: 1px solid #fff;
+}
+.code>p{
+	text-align: center;
+}
+.code>span {
+	display: block;
+	width: 92px;
+	height: 92px;
+	background: url(../img/sprite2.png) no-repeat;
+	background-position: -434px -261px;
+}
+/*版权*/
+.copyright {
+	border-top: 1px solid #32c086;
+}
+.copyright>p {
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
