@@ -10,6 +10,7 @@ p,h3,h5 {
 /*页头*/
 .top {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	padding: 2px 0;
@@ -29,6 +30,7 @@ p,h3,h5 {
 .nav {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	background: #29b078;
 	padding-right: 18%;
 }
@@ -37,7 +39,8 @@ p,h3,h5 {
 	color: #fff;
 }
 .nav>li>a {
-	padding: 36px 40px;
+	padding-top: 36px;
+	padding-bottom: 36px;
 	color: #fff;
 	border: 3px solid #29b078;
 }
@@ -91,10 +94,11 @@ p,h3,h5 {
 }
 .company>ul {
 	padding-top: 31px;
-	padding-left: 38%;
 }
 .company>ul>li {
+	width: 86px;
 	padding-bottom: 31px;
+	margin: auto;
 	list-style: none;
 	font-size: 14px;
 	color: #29b078;
@@ -149,15 +153,13 @@ p,h3,h5 {
 /*相关信息*/
 .related-info {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 25px 11.5%;
 }
 .website-info>p:last-child {
 	padding-top: 60px;
 	font-size: 14px;
-}
-.its-website {
-	margin-left: -200px;
 }
 .website-case {
 	display: flex;
@@ -193,4 +195,54 @@ p,h3,h5 {
 	padding: 10px 0;
 	font-size: 12px;
 	text-align: center;
+}
+/*媒体查询*/
+@media screen and (max-width:480px){
+	/*页脚网站相关信息*/
+	.its-website,
+	.code,.website-info>p:last-child {
+		padding-top: 15px;
+	}
+	/*主体内容中的介绍*/
+	.company-profile {
+		flex-wrap: wrap;
+	}
+	.company-profile span {
+		background-position: -15px -36px;
+	}
+}
+@media screen and (min-width:480px){
+	/*页头部分的导航栏*/
+	.nav>li>a {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media screen and (max-width:768px){
+	/*页头部分的导航栏*/
+	.nav {
+		padding-right: 0px;
+		justify-content: center;
+	}
+	/*主体内容中的介绍*/
+	.main-content {
+		flex-wrap: wrap;
+	}
+	.company {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+	.company-info {
+		width: 100%;
+	}
+}
+@media screen  and (min-width:1024px){
+	/*页脚网站相关信息*/
+	.its-website {
+		margin-left: -27%;
+	}
+}
+@media screen and (min-width:1532px) {
+	/*主体内容中的介绍*/	
 }
