@@ -57,15 +57,7 @@ p,h3,h5 {
 	background: #fafafa;
 }
 /*特点*/
-.list {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	width: 75%;
-	padding-right: 39px;
-	margin: 70px 0;
-	border-right: 1px dashed #dedede;
-}
+
 .point {
 	width: 230px;
 }
@@ -97,12 +89,6 @@ p,h3,h5 {
 	color: #999;
 	line-height: 26px;
 }
-.data {
-	position: absolute;
-	top: 50%;
-	right: -225px;
-	transform: translateY(-50%);
-}
 .data>p {
 	margin: 10px 0;
 	font-size: 18px;
@@ -130,6 +116,7 @@ p,h3,h5 {
 }
 .step-content {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -190,12 +177,13 @@ p,h3,h5 {
 }
 .item-info {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .info-content {
 	width: 245px;
 	padding: 10px 25px 5px;
-	margin-bottom: 5px;
+	margin-bottom: 55px;
 	background: #fff;
 	border: 1px solid #eeeded;
 	border-radius: 5px;
@@ -241,6 +229,7 @@ p,h3,h5 {
 }
 .company-name {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	border: 1px solid #eeeded;
 	box-shadow: 0 0 3px #f7f7f7;
@@ -283,6 +272,7 @@ p,h3,h5 {
 }
 .link {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }
 .link>li {
@@ -358,6 +348,13 @@ p,h3,h5 {
 	.carousel-indicators {
 		bottom: -5px;
 	}
+	/*学员信息*/
+	.info-content {
+		width: 100%;
+	}
+	.link>li {
+		width: 34%;
+	}
 	/*页脚网站相关信息*/
 	.its-website,
 	.code,.website-info>p:last-child {
@@ -373,6 +370,15 @@ p,h3,h5 {
 	.carousel-indicators {
 		bottom: 10px;
 	}
+	/*学员信息*/
+	.info-content {
+		width: 48%;
+	}
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+	.link>li {
+		width: 20%;
+	}
 }
 @media screen and (max-width:768px){
 	/*页头部分的导航栏*/
@@ -380,12 +386,61 @@ p,h3,h5 {
 		padding-right: 0px;
 		justify-content: center;
 	}
-	.carousel-indicators
+	
+}
+@media screen and (max-width:915px) {
+	.content-section {
+		width: 48%;
+	}
+}
+@media screen and (max-width:1024px) {
+	.list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 70px 0;
+	}
+	.point {
+		padding: 20px 0;
+		width: 100%;
+	}
+	.data {
+		text-align: center;
+	}
+	.point>p {
+		text-align: center;
+	}
+	.company-name .icon11 {
+		border: none;
+		box-shadow: none;
+	}
 }
 @media screen  and (min-width:1024px){
+	.list {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		width: 75%;
+		padding-right: 39px;
+		margin: 70px 0;
+		border-right: 1px dashed #dedede;
+}
+	.data {
+		position: absolute;
+		top: 50%;
+		right: -225px;
+		transform: translateY(-50%);
+}
 	/*页脚网站相关信息*/
 	.its-website {
 		margin-left: -27%;
+	}
+}
+@media screen  and (min-width:1130px) {
+	/*学员信息*/
+	.info-content {
+		width: 23%;
 	}
 }
 @media screen and (min-width:1532px) {
