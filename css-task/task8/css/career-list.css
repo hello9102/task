@@ -1,0 +1,461 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+p,h3,h5 {
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+a:focus, a:hover {
+	text-decoration: none;
+}
+/*页头*/
+.top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2px 0;
+}
+.top>p {
+	color: #29b078;
+	font-size: 14px;
+}
+.top>span {
+	display: inline-block;
+	width: 110px;
+	height: 25px;
+	margin: 5px 0;
+	background: url(../img/sprite1.png) no-repeat;
+	background-position: 0 0;
+}
+.navbar {
+	margin-bottom: 0;
+	border: none;
+}
+.container-fluid {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #29b078;
+}
+.navbar-header img {
+	display: block;
+	width: 270px;
+	height: 50px;
+}
+.navbar-default .navbar-nav>li>a {
+	padding-top: 36px;
+	padding-bottom: 36px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	border-top: 3px solid #29b078;
+	border-bottom: 3px solid #29b078;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	border-bottom: 3px solid #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: none;
+}
+/*主体部分*/
+.main {
+	padding: 0 17% 240px;
+	background: #fafafa;
+}
+.main>h5 {
+	padding: 30px 0;
+	font-size: 16px;
+	border-bottom: 1px solid #d0d6d9;
+}
+.main>h5>a {
+	color: #333;
+}
+.main>h5>a:focus, a:hover {
+	text-decoration: none;
+}
+.main>h5>span {
+	color: #29b078;
+}
+/*选项*/
+.option {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	border-bottom: 1px solid #edf1f2;
+}
+.option p,.option a {
+	padding: 0 10px;
+	font-size: 14px;
+}
+.option p {
+	margin: 5px 20px 5px 0;
+	color: #999;
+}
+.option>div:last-child {
+	display: flex;
+	flex-wrap: wrap;
+}
+.option a {
+	margin: 5px 0;
+	text-align: center;
+	color: #333;
+}
+.option a:hover {
+	color: #fff;
+	background: #29b078;
+}
+/*内容*/
+.content-section>h3 {
+	padding: 30px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	border-bottom: 1px solid #d0d6d9;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.introduce {
+	position: relative;
+	margin-top: 50px;
+	margin-right: 2%;
+	background: #fff;
+	border: 1px solid #eeeded;
+	box-shadow: 0 0 1px #eeeded;
+}
+/*简介*/
+.brief-introduce {
+	display: flex;
+	align-items: center;
+	padding: 20px 10px;
+}
+.brief-introduce span {
+	display: block;
+	width: 138px;
+	height: 138px;
+	background: url(../img/sprite3.png) no-repeat;
+	background-position: -10px -25px;
+}
+.brief-section {
+	padding-left: 10px;
+}
+.brief-section p,h5 {
+	line-height: 20px;
+	color: #333;
+}
+.brief-section>h5 {
+	padding-bottom: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.brief-section>p {	
+	word-break: break-all;
+	font-size: 14px;
+}
+/*介绍内容*/
+.introduce-content p {
+	padding: 14px 10px;
+	font-size: 12px;
+}
+.introduce-content>p,
+.introduce-content>div,
+.content-footer>div>div:nth-child(2) {
+	border-top: 1px solid #edf1f2; 
+}
+.introduce-content>div {
+	display: flex;
+	align-items: center;
+}
+.introduce-content>div>p {
+	color: #999;
+}
+.introduce-content>div>p:last-child,
+.content-footer>div {
+	border-left: 1px solid #edf1f2;
+}
+.introduce-content>p {
+	font-size: 14px;
+	font-weight: bold;
+}
+.introduce-content>p:last-child {
+	font-size: 12px;
+	font-weight: normal;
+	color: #999;
+	word-break: break-all;
+}
+.content-top>p>span {
+	margin-left: 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/sprite3.png) no-repeat;
+	background-position: 0 1px;
+	text-align: center;
+}
+.content-middle>p>span:first-child {
+	padding-left: 10px;
+	color: #f01400;
+}
+.content-middle>p>span:last-child {
+	color: #333;
+}
+.content-top>p,
+.content-middle>p {
+	width: 50%;
+}
+.content-footer>p {
+	width: 39%;
+	text-align: center;
+}
+.content-footer>div {
+	width: 61%;
+}
+.content-footer>div>div {
+	display: flex;
+	justify-content: space-between;
+}
+.content-footer>div>div:nth-child(2) {
+	border-bottom: 1px solid #edf1f2; 
+}
+.content-footer>div>div>p:first-child {
+	padding-left: 25px;
+}
+.introduce-content>p>span {
+	color: #f01400;
+}
+/*介绍遮罩*/
+@keyframes myshade1 {
+	0%{}
+	50%{transform:rotateX(180deg);}
+	100%{}
+}
+@-moz-keyframes myshade1 {
+	0%{}
+	50%{transform:rotateX(180deg);}
+	100%{}
+}
+@-webkit-keyframes myshade1 {
+	0%{}
+	50%{transform:rotateX(180deg);}
+	100%{}
+}
+@keyframes myshade2 {
+	0%{}
+	50%{transform: scale(.5);}
+	100%{}
+}
+@-moz-keyframes myshade2 {
+	0%{}
+	50%{transform: scale(.5);}
+	100%{}
+}
+@-webkit-keyframes myshade2 {
+	0%{}
+	50%{transform: scale(.5);}
+	100%{}
+}
+@keyframes myshade3 {
+	0%{}
+	50%{transform:rotateY(180deg);}
+	100%{}
+}
+@-moz-keyframes myshade3 {
+	0%{}
+	50%{transform:rotateY(180deg);}
+	100%{}
+}
+@-webkit-keyframes myshade3 {
+	0%{}
+	50%{transform:rotateY(180deg);}
+	100%{}
+}
+.introduce-shade {
+	display: none;
+}
+.introduce:hover .introduce-shade {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(61,61,61,.85);
+	animation-name: myshade1;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	-moz-animation-name: myshade3;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease-in;
+	-webkit-animation-name: myshade1;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+}
+.introduce:first-child:hover .introduce-shade {
+	animation-name: myshade2;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	-moz-animation-name: myshade2;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease;
+	-webkit-animation-name: myshade2;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+}
+.introduce:last-child:hover .introduce-shade {
+	animation-name: myshade3;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	-moz-animation-name: myshade3;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: ease-in;
+	-webkit-animation-name: myshade3;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+}
+.introduce-shade>h3,
+.introduce-shade>p {
+	font-size: 16px;	
+	color: #fff;
+}
+.introduce-shade>p {
+	padding: 38px 42px 0;
+	text-indent: 2em;
+}
+/*页脚*/
+.footer {
+	background: #26a26f;	
+}
+.footer p {
+	font-size: 16px;
+	color: #fff;
+}
+/*相关信息*/
+.related-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 11.5%;
+}
+.website-info>p:last-child {
+	padding-top: 60px;
+	font-size: 14px;
+}
+.website-case {
+	display: flex;
+}
+.website-case>a {
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 5px;
+	margin-right: 35px;
+	margin-top: 17px;
+}
+.website-case>a:hover {
+	border-bottom: 1px solid #fff;
+}
+.code>p{
+	text-align: center;
+}
+.code>span {
+	display: block;
+	width: 92px;
+	height: 92px;
+	background: url(../img/sprite2.png) no-repeat;
+	background-position: -434px -261px;
+}
+/*版权*/
+.copyright {
+	border-top: 1px solid #32c086;
+}
+.copyright>p {
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: center;
+}
+/*媒体查询*/
+@media screen and (max-width:480px){
+	/*网页的主体内容*/
+	.main {
+		padding: 0 10% 100px;
+	}
+	/*主体内容中的介绍*/
+	.introduce {
+		width: 100%;
+	}
+	/*简介*/
+	.brief-introduce {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.brief-section>h5 {
+		padding-top: 20px;
+		text-align: center;
+	}
+	/*页脚网站相关信息*/
+	.its-website,
+	.code {
+		padding-top: 15px;
+	}
+}
+@media screen and (min-width:480px){
+	/*主体内容中的介绍*/
+	.introduce {
+		width: 100%;
+	}	
+}
+@media screen and (min-width:768px) {
+	/*导航栏*/
+	.nav>li>a {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media screen and (max-width:767px){
+	/*响应式导航栏*/
+	.container-fluid {
+		display: block;
+		padding: 20px 15px;
+	}
+	.navbar-header img {
+		margin-left: 20px;
+		width: 186px;
+		height: 43px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding-top: 20px;
+		padding-bottom: 0;
+		border: none;
+	}
+}
+@media screen and (max-width:840px){
+	/*选项*/
+	.option a {
+		width: 30%;
+}
+@media screen  and (min-width:1024px){
+	/*主体内容中的介绍*/
+	.introduce {
+		width: 48%;
+	}
+	/*页脚网站相关信息*/
+	.its-website {
+		margin-left: -27%;
+	}
+}
+@media screen and (min-width:1532px) {
+	/*主体内容中的介绍*/
+	.introduce {
+		width: 31.33%;
+	}
+}

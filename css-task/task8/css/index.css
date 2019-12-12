@@ -1,0 +1,507 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+p,h3,h5 {
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+a:focus, a:hover {
+	text-decoration: none;
+}
+/*页头*/
+.top {
+	display: flex;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	justify-content: space-around;
+	align-items: center;
+	align-items: center;
+	padding: 2px 0;
+}
+.top>p {
+	color: #29b078;
+	font-size: 14px;
+}
+.top>span {
+	display: inline-block;
+	width: 110px;
+	height: 25px;
+	margin: 5px 0;
+	background: url(../img/sprite1.png) no-repeat;
+	background-position: 0 0;
+}
+.navbar {
+	margin-bottom: 0;
+	border: none;
+}
+.container-fluid {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #29b078;
+}
+.navbar-header img {
+	display: block;
+	width: 270px;
+	height: 50px;
+}
+.navbar-default .navbar-nav>li>a {
+	padding-top: 36px;
+	padding-bottom: 36px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	border-top: 3px solid #29b078;
+	border-bottom: 3px solid #29b078;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	border-bottom: 3px solid #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: none;
+}
+.banner-inner img {
+	width: 100%;
+}
+/*主体部分*/
+.main {
+	padding: 50px 10%;
+	background: #fafafa;
+}
+/*特点*/
+
+.point {
+	width: 230px;
+}
+.point>span {
+	display: block;
+	width: 60px;
+	height: 65px;
+	margin: 0 auto;
+	background: url(../img/sprite1.png) no-repeat;	
+}
+.point .icon1 {
+	background-position: 9px -37px;
+}
+.point .icon2 {
+	background-position: -60px -37px;
+}
+.point .icon3 {
+	background-position: -139px -37px;
+}
+.point>h5 {
+	padding: 25px 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 11.22px;
+	text-align: center;
+}
+.point>p {
+	font-size: 16px;
+	color: #999;
+	line-height: 26px;
+}
+.data>p {
+	margin: 10px 0;
+	font-size: 18px;
+	color: #999;
+}
+.data span:first-child {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../img/sprite1.png) no-repeat;
+}
+.data span:last-child {
+	font-size: 18px;
+	color: #26a26f;
+}
+.data p .icon4 {
+	background-position: -135px -5px;
+}
+/*步骤*/
+.step>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 100px 0 30px; 
+}
+.step-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.content-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 40px 0;
+}
+.content-section>h5{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	font-size: 18px;
+	color: #29b078;
+	border: 1px solid #f3f3f3;
+	border-radius: 50%;
+	box-shadow: 0 3px 3px #f3f3f3;
+	text-align: center;
+	line-height: 50px;
+	background: #fff;
+}
+.content-section>p {
+	width: 154px;
+	font-size: 14px;
+	color: #999;
+}
+.step-content span {
+	display: inline-block;
+	width: 30px;
+	height: 26px;
+	background: url(../img/sprite1.png) no-repeat;
+	background-position: -165px -2px;
+}
+/*学员展示*/
+.show>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 70px 0 50px; 
+}
+.show-indicators {
+	bottom: -45px;
+}
+.show-indicators .active {
+	margin: 1px;
+	background: #29b078;
+}
+.show-indicators li {
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border: 1px solid #e8e7e8;
+	box-shadow: 0 2px 3px #ecebec;
+}
+.item-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.info-content {
+	width: 245px;
+	padding: 10px 25px 5px;
+	margin-bottom: 55px;
+	background: #fff;
+	border: 1px solid #eeeded;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px #eeeded;
+}
+.info-content>h5 {
+	margin-top: 39px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.info-content>p {
+	font-size: 16px;
+	color: #999;
+	margin: 20px 0;
+}
+.info-content>span {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	background: url(../img/sprite1.png) no-repeat;
+}
+.info-content .icon5 {
+	background-position: 0 -113px; 
+}
+.info-content .icon6 {
+	background-position: -121px -113px; 
+}
+.info-content .icon7 {
+	background-position: 2px -236px; 
+}
+.info-content .icon8 {
+	background-position: -120px -236px; 
+}
+/*合作企业*/
+.company>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	margin: 70px 0 50px; 
+}
+.company-name {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid #eeeded;
+	box-shadow: 0 0 3px #f7f7f7;
+	background: #fff;
+}
+.company-name>span {
+	display: inline-block;
+	width: 178px;
+	height: 178px;
+	background: url(../img/sprite2.png) no-repeat;
+}
+.company-name>span:hover {
+	border: 1px solid #f3f3f3;
+	box-shadow: 0 0 10px 3px #f7f7f7;
+}
+.company-name .icon9 {
+	background-position: 0 -7px;
+}
+.company-name .icon10 {
+	background-position: -30px -215px;
+}
+.company-name .icon11 {
+	background-position: -403px -7px;
+}
+.company-name .icon12 {
+	background-position: -225px -3px;
+}
+.company-name .icon13 {
+	background-position: -251px -217px;
+}
+/*友情链接*/
+.section {
+	padding: 20px 10%;
+	text-align: center;
+}
+.section>h3 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 27px;
+}
+.link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.link>li {
+	color: #999;
+}
+.link>li>a {
+	padding-bottom: 4px;
+	font-size: 14px;
+	color: #999;
+}
+.link>li>a:hover {
+	border-bottom: 1px solid #26a26f;
+}
+/*页脚*/
+.footer {
+	background: #26a26f;	
+}
+.footer p {
+	font-size: 16px;
+	color: #fff;
+}
+/*相关信息*/
+.related-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 11.5%;
+}
+.website-info>p:last-child {
+	padding-top: 60px;
+	font-size: 14px;
+}
+.website-case {
+	display: flex;
+}
+.website-case>a {
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 5px;
+	margin-right: 35px;
+	margin-top: 17px;
+}
+.website-case>a:hover {
+	border-bottom: 1px solid #fff;
+}
+.code>p{
+	text-align: center;
+}
+.code>span {
+	display: block;
+	width: 92px;
+	height: 92px;
+	background: url(../img/sprite2.png) no-repeat;
+	background-position: -434px -261px;
+}
+/*版权*/
+.copyright {
+	border-top: 1px solid #32c086;
+}
+.copyright>p {
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: center;
+}
+/*媒体查询*/
+@media screen and (max-width:480px){
+	.carousel-indicators {
+		bottom: -5px;
+	}
+	/*学习步骤*/
+	.content-section {
+		width: 100%;
+		justify-content: center;
+	}
+	.step-content span {
+		display: none;
+	}
+	/*学员信息*/
+	.info-content {
+		width: 100%;
+	}
+	.link>li {
+		width: 34%;
+	}
+	/*页脚网站相关信息*/
+	.its-website,
+	.code,.website-info>p:last-child {
+		padding-top: 15px;
+	}
+}
+@media screen and (min-width:480px){
+	/*页头部分的导航栏*/
+	.carousel-indicators {
+		bottom: 10px;
+	}
+	/*学习步骤*/
+	.content-section {
+		width: 50%;
+		justify-content: center;
+	}
+	.step-content span {
+		display: none;
+	}
+	/*学员信息*/
+	.info-content {
+		width: 48%;
+	}
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+	.link>li {
+		width: 20%;
+	}
+}
+@media screen and (min-width:768px){
+	/*页头部分的导航栏*/
+	.nav>li>a {
+		padding-left: 30px;
+		padding-right: 30px;
+	}	
+}
+@media screen and (max-width:767px) {
+	/*响应式导航栏*/
+	.container-fluid {
+		display: block;
+		padding: 20px 15px;
+	}
+	.navbar-header img {
+		margin-left: 20px;
+		width: 186px;
+		height: 43px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding-top: 20px;
+		padding-bottom: 0;
+		border: none;
+	}
+}
+@media screen and (max-width:1024px) {
+	.list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 70px 0;
+	}
+	.point {
+		padding: 20px 0;
+		width: 100%;
+	}
+	.data {
+		text-align: center;
+	}
+	.point>p {
+		text-align: center;
+	}
+	.company-name .icon11 {
+		border: none;
+		box-shadow: none;
+	}
+}
+@media screen and (min-width:1024px){
+	.list {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		width: 75%;
+		padding-right: 39px;
+		margin: 70px 0;
+		border-right: 1px dashed #dedede;
+}
+	.data {
+		position: absolute;
+		top: 50%;
+		right: -225px;
+		transform: translateY(-50%);		
+}
+	/*页脚网站相关信息*/
+	.its-website {
+		margin-left: -27%;
+	}
+}
+@media screen  and (min-width:1130px) {
+	/*学习步骤*/
+	.content-section {
+		width: 20%;
+		justify-content: center;
+	}
+	.step-content span {
+		display: block;
+	}
+	/*学员信息*/
+	.info-content {
+		width: 23%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
