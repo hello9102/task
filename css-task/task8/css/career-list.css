@@ -442,12 +442,13 @@ a:focus, a:hover {
 	/*选项*/
 	.option a {
 		width: 30%;
+	}
 }
 @media screen  and (min-width:1024px){
 	/*主体内容中的介绍*/
 	.introduce {
 		width: 48%;
-	}
+	}	
 	/*页脚网站相关信息*/
 	.its-website {
 		margin-left: -27%;
