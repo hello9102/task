@@ -60,7 +60,7 @@ a:focus, a:hover {
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: #fff;
 	border-bottom: 3px solid #fff;
-}
+}	
 .navbar-default .navbar-toggle .icon-bar {
 	background: #fff;
 }
@@ -251,32 +251,37 @@ a:focus, a:hover {
 	box-shadow: 0 0 3px #f7f7f7;
 	background: #fff;
 }
-.company-name>span {
+.company-name>div {
+	width: 20%;
+	text-align: center;
+}
+.company-name span {
 	display: inline-block;
 	width: 178px;
 	height: 178px;
-	margin: 0 13px;
 	background: url(../img/sprite2.png) no-repeat;
 }
-.company-name>span:hover {
+.company-name div {
+	border: 1px solid #fff;
+}
+.company-name div:hover {
 	border: 1px solid #f3f3f3;
 	box-shadow: 0 0 10px 3px #f7f7f7;
 }
 .company-name .icon9 {
-	background-position: 0 -7px;
+	background-position: 0 0;
 }
 .company-name .icon10 {
-	background-position: -30px -215px;
+	background-position: -32px -180px;
 }
 .company-name .icon11 {
-	background-position: -403px -7px;
+	background-position: 21px -303px;
 }
 .company-name .icon12 {
-	margin-left: 20px;
-	background-position: -225px -3px;
+	background-position: -7px -450px;
 }
 .company-name .icon13 {
-	background-position: -251px -217px;
+	background-position: 24px -630px;
 }
 /*友情链接*/
 .section {
@@ -345,7 +350,7 @@ a:focus, a:hover {
 	width: 92px;
 	height: 92px;
 	background: url(../img/sprite2.png) no-repeat;
-	background-position: -434px -261px;
+	background-position: -15px -804px;
 }
 /*版权*/
 .copyright {
@@ -357,6 +362,66 @@ a:focus, a:hover {
 	text-align: center;
 }
 /*媒体查询*/
+@media screen and (max-width:1200px) {
+	.company-name>div {
+		width: 33.33%;
+	}
+	.company-name>div:nth-child(4),
+	.company-name>div:nth-child(5) {
+		width: 50%;
+	}
+}
+@media screen and (max-width:1024px) {
+	.list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 70px 0;
+	}
+	.point {
+		padding: 20px 0;
+		width: 100%;
+	}
+	.data {
+		text-align: center;
+	}
+	.point>p {
+		text-align: center;
+	}
+}
+@media screen and (max-width:767px) {
+	/*响应式导航栏*/
+	.container-fluid {
+		display: block;
+		padding: 20px 15px;
+	}
+	.navbar-header img {
+		margin-left: 20px;
+		width: 186px;
+		height: 43px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding-top: 20px;
+		padding-bottom: 0;
+		border: none;
+	}
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+		border: none;
+	}
+	/*合作企业*/
+	.company-name>div {
+		width: 50%;
+	}
+	.company-name>div:nth-child(5) {
+		width: 100%;
+	}
+}
+@media screen and (max-width:600px) {
+	.link>li {
+		width: 34%;
+	}
+}
 @media screen and (max-width:480px){
 	.carousel-indicators {
 		bottom: -5px;
@@ -373,8 +438,12 @@ a:focus, a:hover {
 	.info-content {
 		width: 100%;
 	}
-	.link>li {
-		width: 34%;
+	/*合作企业*/
+	.company-name>div {
+		width: 100%;
+	}
+	.company-name>div:nth-child(4) {
+		width: 100%;
 	}
 	/*页脚网站相关信息*/
 	.its-website,
@@ -400,58 +469,19 @@ a:focus, a:hover {
 		width: 48%;
 	}
 }
-@media screen and (min-width:480px) and (max-width:768px) {
-	.link>li {
-		width: 20%;
-	}
-}
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 	/*页头部分的导航栏*/
 	.nav>li>a {
 		padding-left: 30px;
 		padding-right: 30px;
-	}	
-}
-@media screen and (max-width:767px) {
-	/*响应式导航栏*/
-	.container-fluid {
-		display: block;
-		padding: 20px 15px;
-	}
-	.navbar-header img {
-		margin-left: 20px;
-		width: 186px;
-		height: 43px;
-	}
-	.navbar-default .navbar-nav>li>a {
-		padding-top: 20px;
-		padding-bottom: 0;
-		border: none;
 	}
 }
-@media screen and (max-width:1024px) {
-	.list {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: 70px 0;
-	}
-	.point {
-		padding: 20px 0;
-		width: 100%;
-	}
-	.data {
-		text-align: center;
-	}
-	.point>p {
-		text-align: center;
-	}
-	.company-name .icon11 {
-		border: none;
-		box-shadow: none;
+@media screen and (min-width:600px) and (max-width:920px) {
+	.link>li {
+		width: 20%;
 	}
 }
+
 @media screen and (min-width:1024px){
 	.list {
 		position: relative;
@@ -487,7 +517,6 @@ a:focus, a:hover {
 		width: 23%;
 	}
 }
-
 
 
 

@@ -198,7 +198,7 @@ a:focus, a:hover {
 	width: 92px;
 	height: 92px;
 	background: url(../img/sprite2.png) no-repeat;
-	background-position: -434px -261px;
+	background-position: -15px -804px;
 }
 /*版权*/
 .copyright {
@@ -210,6 +210,38 @@ a:focus, a:hover {
 	text-align: center;
 }
 /*媒体查询*/
+@media screen and (max-width:767px){
+	/*响应式导航栏*/
+	.container-fluid {
+		display: block;
+		padding: 20px 15px;
+	}
+	.navbar-header img {
+		margin-left: 20px;
+		width: 186px;
+		height: 43px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding-top: 20px;
+		padding-bottom: 0;
+		border: none;
+	}
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+		border: none;
+	}
+	/*主体内容中的介绍*/
+	.main-content {
+		flex-wrap: wrap;
+	}
+	.company {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+	.company-info {
+		width: 100%;
+	}
+}
 @media screen and (max-width:480px){
 	/*页脚网站相关信息*/
 	.its-website,
@@ -228,35 +260,7 @@ a:focus, a:hover {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-}
-@media screen and (max-width:767px){
-	/*响应式导航栏*/
-	.container-fluid {
-		display: block;
-		padding: 20px 15px;
-	}
-	.navbar-header img {
-		margin-left: 20px;
-		width: 186px;
-		height: 43px;
-	}
-	.navbar-default .navbar-nav>li>a {
-		padding-top: 20px;
-		padding-bottom: 0;
-		border: none;
-	}
-	/*主体内容中的介绍*/
-	.main-content {
-		flex-wrap: wrap;
-	}
-	.company {
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 25px;
-	}
-	.company-info {
-		width: 100%;
-	}
+	
 }
 @media screen  and (min-width:1024px){
 	/*页脚网站相关信息*/
