@@ -48,12 +48,15 @@ a:focus, a:hover {
 	width: 270px;
 	height: 50px;
 }
+.navbar-default .navbar-nav>li {
+	text-align: center;
+}
 .navbar-default .navbar-nav>li>a {
+	display: inline-block;
 	padding-top: 36px;
 	padding-bottom: 36px;
 	font-size: 16px;
-	color: #fff;
-	text-align: center;
+	color: #fff;	
 	border-top: 3px solid #29b078;
 	border-bottom: 3px solid #29b078;
 }
@@ -246,7 +249,10 @@ a:focus, a:hover {
 .company-name {
 	display: flex;
 	flex-wrap: wrap;
+	/*
 	justify-content: space-around;
+	*/
+	justify-content: flex-start;
 	border: 1px solid #eeeded;
 	box-shadow: 0 0 3px #f7f7f7;
 	background: #fff;
@@ -338,6 +344,7 @@ a:focus, a:hover {
 	padding-bottom: 5px;
 	margin-right: 35px;
 	margin-top: 17px;
+	border-bottom: 1px solid #26a26f;
 }
 .website-case>a:hover {
 	border-bottom: 1px solid #fff;
@@ -366,10 +373,12 @@ a:focus, a:hover {
 	.company-name>div {
 		width: 33.33%;
 	}
+	/*
 	.company-name>div:nth-child(4),
 	.company-name>div:nth-child(5) {
 		width: 50%;
 	}
+	*/
 }
 @media screen and (max-width:1024px) {
 	.list {
@@ -402,20 +411,17 @@ a:focus, a:hover {
 		height: 43px;
 	}
 	.navbar-default .navbar-nav>li>a {
-		padding-top: 20px;
-		padding-bottom: 0;
-		border: none;
-	}
-	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-		border: none;
+		padding: 20px 0 0 0;
 	}
 	/*合作企业*/
 	.company-name>div {
 		width: 50%;
 	}
+	/*
 	.company-name>div:nth-child(5) {
 		width: 100%;
 	}
+	*/
 }
 @media screen and (max-width:600px) {
 	.link>li {
@@ -442,9 +448,11 @@ a:focus, a:hover {
 	.company-name>div {
 		width: 100%;
 	}
+	/*
 	.company-name>div:nth-child(4) {
 		width: 100%;
 	}
+	*/
 	/*页脚网站相关信息*/
 	.its-website,
 	.code,.website-info>p:last-child {
