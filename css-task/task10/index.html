@@ -45,26 +45,124 @@
         <!--内容-->
         <div class="content">
             <div></div>
-            <div>
-                <p>请您按照以下步骤来制定您的纸箱</p>
-                <p>选择箱型</p>
-                <div>
-                    <form name="form1" method="post" action="index.html"> 
-                        <input type="radio" name="demand1" value="counter-box">
-                        <span>对口箱</span>
-                        <input type="radio" name="demand1" value="aircraft-box">
-                        <span>飞机盒</span>
-                        <input type="radio" name="demand1" value="">
-                        <span>天地盖</span>
+            <p>请您按照以下步骤来制定您的纸箱</p>
+            <div class="form">
+                <form class="form1" name="form1" method="post" action="index.html">
+                    <p><span class="icon1"></span>选择箱型</p>
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="demand1" value="counter-box">
+                                <span>对口箱</span>
+                            </div> 
+                            <div>
+                                <input type="radio" name="demand1" value="aircraft-box">
+                                <span>飞机盒</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="demand1" value="">
+                                <span>天地盖</span>
+                            </div>
+                        </div>    
                         <select>
                             <option>查看详情</option>
                             <option>对口箱</option>
                             <option>飞机盒</option>
                             <option>天地盖</option>
                         </select>
-                    </form>                   
-                </div>
-            </div>
+                    </div>
+                </form>
+                <form class="form2" name="form2" method="post" action="index.html">
+                    <p><span class="icon2"></span>确定尺寸</p>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <input type="radio" name="demand2" value="external-diameter">
+                                    <span>外径</span>
+                                </div>
+                                <div>
+                                    <span>长：</span>
+                                    <input type="text" size="4">
+                                    <span>mm</span>
+                                </div>
+                                <div>
+                                    <span>宽：</span>
+                                    <input type="text" size="4">
+                                    <span>mm</span>
+                                </div>
+                                <div>
+                                    <span>高：</span>
+                                    <input type="text" size="4">
+                                    <span>mm</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" name="demand2" value="inradium">
+                                    <span>内径</span>
+                                </div>
+                                <div>
+                                    <span>长：</span>
+                                    <input type="text" size="4">
+                                    <span>mm</span>
+                                </div>
+                                <div>
+                                    <span>宽：</span>
+                                    <input type="text" size="4">
+                                    <span>mm</span>
+                                </div>
+                                <div>
+                                    <span>高：</span>
+                                    <input type="text" size="4">
+                                    <span>mm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <select>
+                            <option>查看情况</option>
+                            <option>外径</option>
+                            <option>内径</option>
+                        </select>
+                    </div>
+                </form>
+                <form class="form3" name="form3" method="post" action="index.html">
+                    <p><span class="icon3"></span>选择材质</p>
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="demand3" value="">
+                                <span>三层A瓦优质</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="demand3" value="">
+                                <span>三层A瓦优质</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="demand3" value="">
+                                <span>三层A瓦优质</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="demand3" value="">
+                                <span>三层A瓦优质</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="demand3" value="">
+                                <span>三层A瓦优质</span>
+                            </div> 
+                        </div>
+                        <select>
+                            <option>查看详情</option>
+                            <option>三层A瓦优质</option>
+                            <option>三层A瓦优质</option>
+                            <option>三层A瓦优质</option>
+                            <option>三层A瓦优质</option>
+                            <option>三层A瓦优质</option>
+                        </select>
+                    </div>
+                </form>
+                <input type="button" value="下一步">
+            </div>   
         </div>
         <!--相关信息-->
         <div class="info">
