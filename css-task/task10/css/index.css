@@ -7,6 +7,9 @@ p,h3,h5 {
 	margin-bottom: 0;
 	letter-spacing: 1px;
 }
+button, input, select {
+    outline: none;
+}
 a {
     text-decoration: none;
 }
@@ -42,15 +45,6 @@ a:focus, a:hover {
 .header button:hover a {
     color: #333;
 }
-/*媒体查询*/
-@media screen and (max-width:767px) {
-    .header {
-        padding: 0 15px;
-    }
-    .header button:hover {
-        padding: 11px 12px;
-    }
-}
 /*主要内容*/
 /*导航*/
 .navbar {
@@ -71,37 +65,6 @@ a:focus, a:hover {
     background: #1d7ad9;
     color: #fff;
 }
-/*媒体查询*/
-@media screen and (min-width:768px) {
-    .navbar {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .navbar-default {
-        padding: 0 18%;
-    }
-    .container-fluid {
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0;
-    }
-    .navbar-collapse {
-        padding-right: 0px;
-    }
-    .nav>li {
-        margin:28px 0 28px 29px;
-    }
-    .navbar-default .navbar-nav>li>a {
-        border: 1px solid #e6e6e6;
-        box-shadow: 0 0 2px #e6e6e6;
-        background: #fff;
-    }
-}
-@media screen and (max-width:767px) {
-    .nav>li {
-        text-align: center;
-    }  
-}
 /*内容*/
 .content {
     padding: 0 18% 55px;
@@ -112,6 +75,43 @@ a:focus, a:hover {
     font-size: 22px;
     border-left: 3px solid #1d7ad9;
 }
+/*流程图*/
+.flowchart {
+    padding: 45px 0;
+}
+.chart-section>p {
+    margin-top: 25px;
+    font-size: 18px;
+    color:#cfcfcf;
+    text-align: center;
+}
+.chart-section>div>b,
+.chart-section>div span {
+    display: inline-block;
+    background: #ccc;
+}
+.chart-section>div>b {
+    width: 24px;
+    height: 24px;
+    margin: 0 -10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+}
+.chart-section>div span {
+    width: 60px;
+    height: 5px;
+}
+.chart-section:hover p {
+    color: #ff7f02;
+}
+.chart-section:hover span,
+.chart-section:hover b {
+    background: #ff7f02;
+}
+/*表单*/
 .form {
     border: 1px solid #e8e8e8;
 }
@@ -123,7 +123,6 @@ a:focus, a:hover {
     font-size: 24px;
     color: #fff;
     background: #e15053;
-    /*border-top: 1px solid #e7e7e7;*/
     border: none;
     border-radius: 5%;
     outline: none;
@@ -131,9 +130,6 @@ a:focus, a:hover {
 .form p,
 .form span {
     font-size: 18px;
-}
-.form select {
-    font-size: 14px;
 }
 .form p {
     padding: 15px;
@@ -161,13 +157,42 @@ a:focus, a:hover {
     color: #666;
 }
 .form select {
-    background: #fff;
+    width: 120px;
+    height: 28px;
+    padding-right: 20px;
+    padding-left: 5px;
+    margin: 10px 0;
+    /*清除select选择框样式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 14px;
+    border: 1px solid #e8e8e8;
+    background: url(../img/icon4.png) no-repeat scroll right center transparent;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+.form select::-ms-expand { 
+    display: none; 
+}
+.form input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: sub;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #dbdbdc;
+    border-radius: 50%;
+}
+.form input[type="radio"]:focus {
+    border: 6.5px solid #1d7ad9;
+    outline: none;
 }
 .form form>div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 37px 20px 45px 37px;
+    padding: 37px 20px 37px 45px;
     background: #fbfcff;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
@@ -178,49 +203,12 @@ a:focus, a:hover {
     padding: 10px 0;
 }
 .form2>div>div {
-    width: 85%;
+    width: 75%;
 }
 .form2>div>div>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-/*媒体查询*/
-@media screen and (min-width:768px) {
-    .form1>div>div,
-    .form3>div>div {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .form1>div>div {
-        justify-content: space-between;
-        width: 55%;
-    }
-    .form2>div>div>div>div {
-        padding-right: 10px;
-    }    
-    .form3>div>div {
-        width: 80%;
-    }
-    .form3>div>div>div {
-        padding-right: 60px;
-    }
-}
-@media screen and (max-width:1024px) {
-    .form2>div>div {
-        width: 60%;
-    }
-    .form2>div>div>div>div:first-child {
-        width: 80%;
-    }
-}
-@media screen and (max-width:767px) {
-    .content {
-        padding: 0 15px 55px;
-    }
-    .form2>div>div>div>div {
-        width: 100%;
-    }
 }
 /*信息*/
 .info {
@@ -265,17 +253,6 @@ a:focus, a:hover {
     background: url(../img/sprite.png) no-repeat;
     background-position: 0 -30px;
 }
-/*媒体查询*/
-@media screen and (max-width:837px) {
-    .info {
-        justify-content: center;
-    }
-}
-@media screen and (max-width:768px) {
-    .info {
-        padding: 55px 0;
-    }
-}
 /*页脚*/
 .footer {
     display: flex;
@@ -287,4 +264,116 @@ a:focus, a:hover {
     padding: 10px 20px;
     font-size: 12px;
     color: #fff;
+}
+/*媒体查询*/
+@media screen and (min-width:768px) {
+    /*导航*/
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar-default {
+        padding: 0 18%;
+    }
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+    }
+    .navbar-collapse {
+        padding-right: 0px;
+    }
+    .nav>li {
+        margin:28px 0 28px 29px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        border: 1px solid #e6e6e6;
+        box-shadow: 0 0 2px #e6e6e6;
+        background: #fff;
+    }
+    /*表单*/
+    .form1>div>div,
+    .form3>div>div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form1>div>div {
+        justify-content: space-between;
+        width: 55%;
+    }
+    .form2>div>div>div>div {
+        padding-right: 10px;
+    }    
+    .form3>div>div {
+        width: 80%;
+    }
+    .form3>div>div>div {
+        padding-right: 60px;
+    }
+}
+@media screen and (min-width:838px) {
+    /*流程图*/
+    .flowchart {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:1167px) {
+    /*表单*/
+    .form2>div>div {
+        width: 60%;
+    }
+    .form2>div>div>div>div:first-child {
+        width: 80%;
+    }
+}
+@media screen and (max-width:837px) {
+    /*流程图*/
+    .chart-section>div span {
+        width: 47%;
+    }
+    .chart-section>p {
+        margin-bottom: 25px;
+    }
+    /*信息*/
+    .info {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:767px) {
+    /*页头*/
+    .header {
+        padding: 0 15px;
+    }
+    .header button:hover {
+        padding: 11px 12px;
+    }
+    /*导航*/
+    .nav>li {
+        text-align: center;
+    }  
+    /*内容*/
+    .content {
+        padding: 0 15px 55px;
+    }
+    /*表单*/
+    .form2>div>div>div>div {
+        width: 100%;
+    }
+     /*信息*/
+     .info {
+        padding: 55px 0;
+    }
+}
+@media screen and (max-width:480px) {
+    /*内容*/
+    .content>p {
+        padding-left: 4px;
+        font-size: 18px;
+        border-left: 1px solid #1d7ad9;
+    }
+    /*表单*/
+    .form form>div {
+        padding: 37px 5px 37px 10px;
+    }
 }
