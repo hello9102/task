@@ -1,13 +1,39 @@
-body,div{
+*{
 	margin:0;
 	padding:0;
 }
+/*清楚浮动代码*/
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+.clearfix {
+	zoom: 1;
+}
 .wrap{
-	background-color:orange;
+	background-color:#ff9900;
 	padding-left:30%;
 	padding-bottom:30%;
 	margin:2.5% 0 0 2.5%;
 	float:left; 
 	border-radius:10%;
 }
+input {
+	display: block;
+	width:100%;
+	padding: 20px;
+	margin-top:20px;
+	outline-style: none;
+	border: 1px solid #ff9900;
+	border-radius: 10px;
+	background-color:#fff;
+	font-size: 20px;
+	color: #ff9900;
+}
+input:hover {
+	background-color: #ff9900;
+	color: #fff;
+}
+
 
